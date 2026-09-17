@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #000;
+    text-decoration: underline;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 500px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button, input[type="reset"] {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    background-color: #666;
+    margin-left: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}

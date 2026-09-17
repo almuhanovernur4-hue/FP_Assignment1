@@ -5,34 +5,82 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Artist Stream Counter - Contacts</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>Artist stream counter</header>
-<nav>
-    <a href="index.html" class="active">Main</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contacts</a>
-</nav>
-<h2>About us</h2>
-<h3>We're community of people passionate with music that went under the radars for several reasons, and trying to share it with people that appreciate the experimental sound too</h3>
-<h3>Most undeground artists start from posting on <a href="https://soundcloud.com">Soundcloud</a>, which is a free platform for public audio posting</h3>
-<h3>Once they have enough listeners and resources, they blow up into more mainstream fields, posting their music on <a href="https://spotify.com">Spotify</a>, marking the true start of their career</h3>
-<h3>They often collaborate with each other, creating tight but dense scene</h3>
-<br>
-<h2>Most popular music streaming platforms</h2>
-<ol>
-    <li><a href="https://spotify.com">Spotify</a></li>
-    <li><a href="https://soundcloud.com">Soundcloud</a></li>
-    <li><a href="https://music.youtube.com">YouTube Music</a></li>
-    <li><a href="https://music.apple.com">Apple Music</a></li>
-</ol>
-<h2>Greatest pioneers of underground music</h2>
-<ul>
-    <li>Yung Lean</li>
-    <li>Bladee</li>
-    <li>Sickboyrari</li>
-    <li>SpaceGhostPurrp</li>
-</ul>
+
+<header>
+    <h1>Artist stream counter</h1>
+    <nav>
+        <a href="index.html">Main</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contacts</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Contact us</h1>
+    <p>Kindly fill in the form below to get in touch with us if you have any new artist suggestions.</p>
+
+    <form>
+        <div>
+            <label for="title-mr">Title:</label><br>
+            <input type="radio" id="title-mr" name="title" value="mr" required>
+            <label for="title-mr">Mr</label>
+            <input type="radio" id="title-ms" name="title" value="ms">
+            <label for="title-ms">Ms</label>
+            <input type="radio" id="title-dr" name="title" value="dr">
+            <label for="title-dr">Dr</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" minlength="5" maxlength="10" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" placeholder="akkre@email.com" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="number">Phone Number:</label><br>
+            <input type="tel" id="number" name="number" placeholder="012-3456-7890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="comment">Type in your Comments:</label><br>
+            <textarea id="comment" name="comment" cols="30" rows="10" required></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to my Newsletters</label>
+        </div>
+        <br>
+
+        <div>
+            <button type="submit">Reach me</button>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Artist Stream Counter</p>
+</footer>
+
 </body>
 </html>
